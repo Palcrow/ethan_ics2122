@@ -1,7 +1,7 @@
-Year = input('Input Year Of Birth: ')
+Year = int(input('Input Year Of Birth: '))
 Month = int(input('Input Month Of Birth (Number): '))
 Day = int(input('Input Day Of Birth: '))
-Century = Year[:2] + Year[4:]
+Century = Year//100
 Year = Year[:0] + Year[2:]
 if Month > 2:
     Month -= 2
