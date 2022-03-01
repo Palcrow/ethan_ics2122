@@ -1,5 +1,3 @@
-#https://github.com/greendar/ics3_2122
-  
 import os 
 
 Loopy = True
@@ -10,13 +8,15 @@ while Loopy:
     print('Add A Employee')
     StaffList = []
     name = input('Name: ')
-    prof = input('Profession: ')
-    exp = input('Length Of Employment: ')
+    prof = input('Department: ')
+    exp = int(input('Length Of Employment: '))
+    earned = exp*51263
     os.system('cls')
     print(f'''
 Name: {name}
-Profession: {prof}
+Department: {prof}
 Length Of Employment: {exp}
+Total Earnings: ${earned}
 ''')
 
     answer = input('Is This Information Correct: ')
@@ -24,17 +24,19 @@ Length Of Employment: {exp}
         StaffList.append(name)
         StaffList.append(prof)
         StaffList.append(exp)
+        StaffList.append(earned)
         AllStaff.append(StaffList)
         os.system('cls')
 
         answer = input('Is This All The Employees You Wish To Add: ')
         if answer == 'yes':
             Loopy = False
-            os.system('cls')
         else:
             os.system('cls')
     else:
         os.system('cls')
 
-print(AllStaff)
+Loop = True
 
+while Loop:
+    print(*AllStaff, sep='\n')
