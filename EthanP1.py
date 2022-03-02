@@ -1,4 +1,4 @@
-import os 
+import os
 
 Loopy = True
 AllStaff = []
@@ -28,8 +28,9 @@ Total Earnings: ${earned}
         AllStaff.append(StaffList)
         os.system('cls')
 
-        answer = input('Is This All The Employees You Wish To Add\n [Yes] [No]: ')
-        if answer == 'Yes':
+        Answer = input('Is This All The Employees You Wish To Add\n [Yes] [No]: ')
+        if Answer == 'Yes':
+            os.system('cls')
             Loopy = False
         else:
             os.system('cls')
@@ -43,4 +44,12 @@ while Loop:
     command = input('What Would You Like To Do?\n [Enter Number Starting At 0 To List A Certant Person] [Quit]: ')
     if command == quit:
         Loop = False
-    elif 
+    else:
+        command = int(command)
+        command = command - 1
+        print(AllStaff[command])
+        end = input('Is That It?\n [Yes] [No]: ')
+        if end == 'Yes':
+            Loop = False
+        else:
+            os.system('cls')
