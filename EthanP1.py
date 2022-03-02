@@ -19,8 +19,8 @@ Length Of Employment: {exp}
 Total Earnings: ${earned}
 ''')
 
-    answer = input('Is This Information Correct: ')
-    if answer == 'yes':
+    answer = input('Is This Information Correct\n [Yes] [No]: ')
+    if answer == 'Yes':
         StaffList.append(name)
         StaffList.append(prof)
         StaffList.append(exp)
@@ -28,8 +28,8 @@ Total Earnings: ${earned}
         AllStaff.append(StaffList)
         os.system('cls')
 
-        answer = input('Is This All The Employees You Wish To Add: ')
-        if answer == 'yes':
+        answer = input('Is This All The Employees You Wish To Add\n [Yes] [No]: ')
+        if answer == 'Yes':
             Loopy = False
         else:
             os.system('cls')
@@ -40,3 +40,7 @@ Loop = True
 
 while Loop:
     print(*AllStaff, sep='\n')
+    command = input('What Would You Like To Do?\n [Enter Number Starting At 0 To List A Certant Person] [Quit]: ')
+    if command == quit:
+        Loop = False
+    elif 
