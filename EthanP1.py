@@ -9,7 +9,7 @@ while Loopy:
     StaffList = []
     name = input('Name: ')
     prof = input('Department: ')
-    exp = int(input('Length Of Employment: '))
+    exp = int(input('Length Of Employment (Number Only): '))
     earned = exp*51263
     os.system('cls')
     print(f'''
