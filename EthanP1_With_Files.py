@@ -40,21 +40,3 @@ Total Earnings: ${earned}
             os.system('cls')
     else:
         os.system('cls')
-
-Loop = True
-
-#while Loop:
-#    print(*AllStaff, sep='\n')
-#    command = input('What Would You Like To Do?\n [Enter Number To List A Certant Person] [Quit]: ')
-#    if command == 'Quit':
-#        Loop = False
-#    else:
-#        os.system('cls')
-#        command = int(command)
-#        command = command - 1
-#        print(AllStaff[command])
-#        end = input('Is That It?\n [Yes] [No]: ')
-#        if end == 'Yes':
-#            Loop = False
-#        else:
-#            os.system('cls')
