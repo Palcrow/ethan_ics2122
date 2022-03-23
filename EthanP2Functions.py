@@ -2,6 +2,11 @@ import os
 from time import sleep
 
 
+def nameFile():
+    os.system('cls')
+    global fileName
+    fileName = input('What Is Your Business Name: ') + 'Staff.txt'
+    
 def menu():
     
     notDone = True
