@@ -3,5 +3,5 @@ def product(fileName):
     sum = 1
     for x in f:
         sum = sum * int(x)
-    return sum
     f.close
+    return sum
