@@ -1,3 +1,4 @@
+#Done
 def encrypt(fileName, shifts):
     f = open(fileName, 'r')
     turns = int(shifts)
