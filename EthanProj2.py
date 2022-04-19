@@ -1,3 +1,4 @@
+#Done
 def product(fileName):
     f = open(fileName, 'r')
     sum = 1
