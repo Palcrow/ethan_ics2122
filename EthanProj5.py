@@ -1,3 +1,4 @@
+#Under Development
 def amount(filename):
     f = open(filename, 'r')
     char = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYV1234567890.,:;<>/?[{]}|\=+-_`~!@#$%^&*()\n '
