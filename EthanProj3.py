@@ -1,3 +1,4 @@
+#Done
 a = int(input('Enter Value For A: '))
 if a == 0:
     print('Cant Be 0')
